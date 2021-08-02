@@ -1,0 +1,1 @@
+console.log(`Have trust in no one!`)
