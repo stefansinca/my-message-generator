@@ -1,7 +1,6 @@
 
-const randomNumber = () => {
-   let x =  Math.floor(Math.random( ) * 10);
-    switch(x) {
+   // First version of a random phrases to display to user
+   /* switch(x) {
         case 0:
         console.log('I am swift as a gazelle. An old one. With arthritis. Run over by a Land Rover. 8 days ago.');
         break;
@@ -35,6 +34,14 @@ const randomNumber = () => {
                                                 break;
                                                 default:
                                                     console.log(`Please STOP! I'm to funny!`)
-    }}
+    } */
 
-    randomNumber()
+    let letItBe = [' Let it be, let it be, let it be, let it be', ' Whisper words of wisdom, let it be', ' When I find myself in times of trouble']
+    let heyJude = [` Hey Jude, don't make it bad`, ` Take a sad song and make it better`, ` Hey Jude, don't let me down`]
+    let yesterday = [' Yesterday', " All my troubles seemed so far away", ' Love was such an easy game to play']
+
+    const randomNumber = (arr) => {
+          return (arr [Math.floor(Math.random( ) * arr.length)]);
+}
+    let combineLyrics = randomNumber(letItBe) + randomNumber(heyJude) + randomNumber(yesterday);
+    console.log(combineLyrics)
